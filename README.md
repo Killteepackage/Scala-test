@@ -1,4 +1,4 @@
-# Skala-test
+# Scala-test
 ## 1. What will be printed out as the result of the following code execution?
 ```scala
 val a = 1;
