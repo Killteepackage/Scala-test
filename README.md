@@ -70,3 +70,17 @@ println(tokenMe('5'))
 - [ ]	1
 - [ ]	3
 - [ ]	2
+## 6. What is the returned type of this function:
+```scala
+def sayHelloRunnable(name: String) = new Runnable {
+  def sayIt() = println(s"Hello, $name")
+  def run() = sayIt()
+}
+```
+- [x]	Runnable{def sayIt(): Unit}
+- [ ]	Runnable
+## 7. Scala's Unit roughly corresponds to which Java type?
+- [x]	void
+- [ ]	bool
+- [ ]	get
+- [ ]	null
