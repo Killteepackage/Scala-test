@@ -36,3 +36,37 @@ object Main extends App {
 - [ ]	Runtime error
 - [ ]	Compilation error
 - [x]	6
+## 4. What will be printed out as the result of the following code execution?
+```scala
+object Main extends App {
+  val str = "one"
+  val digit =
+    str match {
+      case "one" => 1
+      case "two" => 2
+      case "three" => 3
+      case _ => -1
+    }
+  println(digit)
+}
+```
+- [ ]	1 2 3 -1
+- [ ]	-1
+- [x]	1
+- [ ]	Compilation error
+## 5. What will be printed into the console?
+```scala
+val Constant = 'Q'
+def tokenMe(ch: Char) = (ch: @switch) match {
+  case ' ' | '\t' | '\n'  => 1
+  case 'A' | 'Z' | '$'    => 2
+  case '5' | Constant     => 3 
+  case _                  => 4
+}
+println(tokenMe('5'))
+```
+- [x]	3. But code will compile with warnings
+- [ ]	4
+- [ ]	1
+- [ ]	3
+- [ ]	2
