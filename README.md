@@ -84,3 +84,33 @@ def sayHelloRunnable(name: String) = new Runnable {
 - [ ]	bool
 - [ ]	get
 - [ ]	null
+## 8. What will be the result of the following code execution?
+```scala
+for (
+  i1 <- 1 to 5
+  if i1 % 2 == 0
+  i2 <- 1 to i1
+  if i2 > 2
+) println(i2)
+```
+- [x]	Compilation error
+- [ ]	3 4 5
+- [ ]	3 4
+- [ ]	Runtime error
+- [ ]	1 2 3 4 5
+## 9. What will be the result of calling method forall on empty Option?
+```scala
+val a = None
+a.forall(_ == "text") 
+```
+- [ ]	false
+- [x]	true
+## 10. What is a generator expression in the following code?
+```scala
+for(i <- 1 to 10)
+  println(i)
+```
+- [ ]	for(i <- 1 to 10)
+- [x]	1 to 10
+- [ ]	println(i)
+- [ ]	i <- 1 to 10
